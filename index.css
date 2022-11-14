@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display';
+}
+
+:root {
+    --card-background: #fff;
+    --Pale-blue: #e0e8ff;
+    --Bright-blue: #3829e0;
+    --Very-pale-blue: #f5f7ff;
+    --Desaturated-blue: #7280a7;
+    --Dark-blue: #1f2f56;
+    --hover: #756FF0;
+}
+
+body {
+    width: 1440px;
+    height: 900px;
+    margin: 0 auto;
+    background-color: var(--Pale-blue);
+}
+
+.bela_pozadina {
+    position: absolute;
+    width: 450px;
+    height: 698px;
+    background-color: var(--card-background);
+    border-radius: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 10px 20px rgba(56, 41, 224, .15);
+}
+
+.image {
+    background-image: url('images/illustration-hero.svg');
+    width: 100%;
+    height: 220px;
+    border-radius: 20px 20px 0 0;
+}
+
+h1 {
+    position: relative;
+    top: 8%;
+    text-align: center;
+    color: var(--Dark-blue);
+    font-weight: 800;
+}
+
+p {
+    position: relative;
+    margin: auto;
+    width: 22rem;
+    top: 11%;
+    text-align: center;
+    color: var(--Desaturated-blue);
+}
+
+button {
+    position: relative;
+    font-size: 14px;
+    top: 35%;
+    left: 10%;
+    font-weight: 700;
+    width: 354px;
+    height: 50px;
+    background: var(--Bright-blue);
+    color: var(--card-background);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(56, 41, 224, .35);
+}
+
+button:hover {
+    background-color: var(--hover);
+    cursor: pointer;
+}
+
+.cancel {
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--Desaturated-blue);
+    top: 43%;
+    right: 40%;
+}
+
+.cancel:hover {
+    color: var(--Dark-blue);
+    cursor: pointer;
+}
+
+.plan {
+    position: absolute;
+    width: 354px;
+    height: 98px;
+    top: 62%;
+    left: 10%;
+    background: #F8F9FE;
+    border-radius: 10px;
+}
+
+#ikonica {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
+
+h4 {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    font-weight: 800;
+    color: var(--Dark-blue);
+}
+
+.cena {
+    position: absolute;
+    top: 52%;
+    left: 25%;
+    color: var(--Desaturated-blue);
+    font-size: 14px;
+}
+
+.change {
+    position: absolute;
+    top: 40%;
+    left: 78%;
+    color: var(--Bright-blue);
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.change:hover {
+    color: var(--hover);
+    text-decoration: none;
+}
+
+#b {
+    border-radius: 20px;
+}

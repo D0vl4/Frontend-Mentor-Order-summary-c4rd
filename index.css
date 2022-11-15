@@ -22,6 +22,11 @@ body {
     background-color: var(--Pale-blue);
 }
 
+.plava_pozadina {
+    background-image: url('images/pattern-background-desktop.svg');
+    height: 437px;
+}
+
 .bela_pozadina {
     position: absolute;
     width: 450px;
@@ -34,12 +39,20 @@ body {
     box-shadow: 0px 10px 20px rgba(56, 41, 224, .15);
 }
 
+@media only screen and (max-width: 768px) {
+    .bela_pozadina {
+        width: 50%;
+    }
+}
+
 .image {
     background-image: url('images/illustration-hero.svg');
+    background-repeat: no-repeat;
     width: 100%;
     height: 220px;
     border-radius: 20px 20px 0 0;
 }
+
 
 h1 {
     position: relative;
@@ -58,6 +71,13 @@ p {
     color: var(--Desaturated-blue);
 }
 
+
+@media only screen and (max-width: 768px) {
+    p {
+        width: 80%;
+    }
+}
+
 button {
     position: relative;
     font-size: 14px;
@@ -71,11 +91,18 @@ button {
     border: none;
     border-radius: 10px;
     box-shadow: 0px 10px 20px rgba(56, 41, 224, .35);
+    transition: all .3s;
 }
 
 button:hover {
     background-color: var(--hover);
     cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    button {
+        width: 80%;
+    }
 }
 
 .cancel {
@@ -103,6 +130,12 @@ button:hover {
     border-radius: 10px;
 }
 
+@media only screen and (max-width: 768px) {
+    .plan {
+        width: 80%;
+    }
+}
+
 #ikonica {
     position: absolute;
     top: 25%;
@@ -126,7 +159,7 @@ h4 {
 }
 
 .change {
-    position: absolute;
+    position: relative;
     top: 40%;
     left: 78%;
     color: var(--Bright-blue);
